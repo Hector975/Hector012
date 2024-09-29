@@ -1,0 +1,630 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A39012F641E5712A56B',
+    participant: undefined
+  },
+  messageTimestamp: 1727571588,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  keyword: 'key_0242f522-95e3-46bd-ad37-fdb12020db61',
+  answer: '🙌 ¡Hola! Mi nombre es Xolito. Bienvenido a *Noveno Nivel*! 🎉 ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7655024981fc003972d9542a64181af4'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_90b21aaa-fa9f-4db6-9a9c-9d0d802b350e',
+  keyword: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  answer: '📋 Escribe una de las siguientes opciones para continuar:\n' +
+    '👉 *boletos* para comprar boletos 🎫\n' +
+    '👉 *evento* para obtener más información del evento *NOVENO NIVEL* 📅',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd0848bdc2665a85e78f36226cbadd41'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3AE2BDBDF1DA725459B8',
+    participant: undefined
+  },
+  messageTimestamp: 1727571591,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Boletos',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Boletos',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_84551090-dcce-4276-aeca-3496d1223372',
+  keyword: 'key_0424384c-936d-41aa-a7c5-595df650fc73',
+  answer: '🎫 ¿Cuántos boletos deseas comprar? (Por favor, ingresa un número del 1 al 10)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '663671aa1dc00212605c952fe3d4fd77'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A8BF67413111193969F',
+    participant: undefined
+  },
+  messageTimestamp: 1727571595,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_66849d85-5205-4ceb-8b4d-8616098ff777',
+  keyword: 'ans_84551090-dcce-4276-aeca-3496d1223372',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '958826cb31a7038e848f7bde9571411c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A45E513AC7850E487F0',
+    participant: undefined
+  },
+  messageTimestamp: 1727571608,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      url: 'https://mmg.whatsapp.net/v/t62.7118-24/24245160_2106332859782364_5735596726726328697_n.enc?ccb=11-4&oh=01_Q5AaIH3wnrmSkD9a5vJeZOvmEiEeDvgy2bxzEcNyljSY0-W4&oe=67201ACD&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'image/jpeg',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 1600,
+      width: 1142,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7118-24/24245160_2106332859782364_5735596726726328697_n.enc?ccb=11-4&oh=01_Q5AaIH3wnrmSkD9a5vJeZOvmEiEeDvgy2bxzEcNyljSY0-W4&oe=67201ACD&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      firstScanSidecar: [Uint8Array],
+      firstScanLength: 20998,
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_media__68337ab3-4409-4243-8d77-977acfde7248',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3ae47f19-b762-45bb-9f61-f439a18dae12',
+  keyword: 'ans_66849d85-5205-4ceb-8b4d-8616098ff777',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '9818327907f6195c65818baea5adc796'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3AA57841E2E67DF9A9BF',
+    participant: undefined
+  },
+  messageTimestamp: 1727571616,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'hectorsaavedra',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hectorsaavedra',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0ecd38e4-f424-4b57-9b62-73836ce4f9f8',
+  keyword: 'ans_3ae47f19-b762-45bb-9f61-f439a18dae12',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'f9f1f11d96bddbae311f214c2ce3acb0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A2816E48657F24197BF',
+    participant: undefined
+  },
+  messageTimestamp: 1727571621,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hector',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hector',
+  from: '5217713169532'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A2592D5B4D7E47B53AC',
+    participant: undefined
+  },
+  messageTimestamp: 1727571669,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  keyword: 'key_0242f522-95e3-46bd-ad37-fdb12020db61',
+  answer: '🙌 ¡Hola! Mi nombre es Xolito. Bienvenido a *Noveno Nivel*! 🎉 ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7655024981fc003972d9542a64181af4'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_90b21aaa-fa9f-4db6-9a9c-9d0d802b350e',
+  keyword: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  answer: '📋 Escribe una de las siguientes opciones para continuar:\n' +
+    '👉 *boletos* para comprar boletos 🎫\n' +
+    '👉 *evento* para obtener más información del evento *NOVENO NIVEL* 📅',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd0848bdc2665a85e78f36226cbadd41'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3AEACCA0AC65236177CD',
+    participant: undefined
+  },
+  messageTimestamp: 1727571672,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Evento',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Evento',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ac5e8021-6a72-4dc6-9ea7-1725f4e2889f',
+  keyword: 'key_26bb160b-2a2f-49f0-8506-f83f0cd4a8f7',
+  answer: '\n' +
+    '📅 *NOVENO NIVEL*\n' +
+    '📍 Dirección: Av. Nuevo México 112, San Jerónimo Xonacahuacán, Tecámac, Edomex.\n' +
+    '💲 Costo del evento: $80 antes del evento, $100 el día del evento.\n' +
+    '🗓 Fecha: 02 de Noviembre, Apertura de puertas a las 15:00 hrs.\n' +
+    '\n' +
+    '🎶 *Participación de:*\n' +
+    '- 🎸 SHD Tributo a Héroes del Silencio.\n' +
+    '- 🎤 Holkan Mictlan.\n' +
+    '- 🎧 Niño Voltio.\n' +
+    '- 🥁 The Vshes.\n' +
+    '- 🎸 One Last Ride (Tributo a Metallica).\n' +
+    '- 🎤 VLV (Tributo a DLD).\n' +
+    '- 🪕 El Reboso de la Abuela.\n' +
+    '- 🎷 La Roo-ska.\n' +
+    '- 🎸 Vulva.\n' +
+    '- 🎸 Desierto Seven.\n' +
+    '\n' +
+    '🍴 Además de música en vivo, habrá gastronomía local y artesanías.\n' +
+    '\n' +
+    '\n' +
+    '👉 *boletos* para comprar boletos.\n' +
+    '\n' +
+    '👉 *hola* para regresar al menú principal.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'c6e550f4ff442f676538a8764c0cd75a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADE9E2E0A1DD492F500',
+    participant: undefined
+  },
+  messageTimestamp: 1727571687,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'boletos',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'boletos',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  keyword: 'key_0242f522-95e3-46bd-ad37-fdb12020db61',
+  answer: '🙌 ¡Hola! Mi nombre es Xolito. Bienvenido a *Noveno Nivel*! 🎉 ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7655024981fc003972d9542a64181af4'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_90b21aaa-fa9f-4db6-9a9c-9d0d802b350e',
+  keyword: 'ans_a689666e-23c9-4367-bf6b-e08d5fd3a5a0',
+  answer: '📋 Escribe una de las siguientes opciones para continuar:\n' +
+    '👉 *boletos* para comprar boletos 🎫\n' +
+    '👉 *evento* para obtener más información del evento *NOVENO NIVEL* 📅',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd0848bdc2665a85e78f36226cbadd41'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A25D307CF9EDBE56741',
+    participant: undefined
+  },
+  messageTimestamp: 1727571692,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Boletos',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Boletos',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_84551090-dcce-4276-aeca-3496d1223372',
+  keyword: 'key_0424384c-936d-41aa-a7c5-595df650fc73',
+  answer: '🎫 ¿Cuántos boletos deseas comprar? (Por favor, ingresa un número del 1 al 10)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '663671aa1dc00212605c952fe3d4fd77'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0B208B8DC76DDEF6CD',
+    participant: undefined
+  },
+  messageTimestamp: 1727571696,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_66849d85-5205-4ceb-8b4d-8616098ff777',
+  keyword: 'ans_84551090-dcce-4276-aeca-3496d1223372',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '958826cb31a7038e848f7bde9571411c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3A222431C9E41280AACD',
+    participant: undefined
+  },
+  messageTimestamp: 1727571704,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      url: 'https://mmg.whatsapp.net/v/t62.7118-24/25384199_1472812673359058_2493223950144523662_n.enc?ccb=11-4&oh=01_Q5AaIAOTPR9M47IdVeG930b3UKbQEq4AHVZ8NZiU6eyzw0jo&oe=67200130&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'image/jpeg',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 1024,
+      width: 1024,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7118-24/25384199_1472812673359058_2493223950144523662_n.enc?ccb=11-4&oh=01_Q5AaIAOTPR9M47IdVeG930b3UKbQEq4AHVZ8NZiU6eyzw0jo&oe=67200130&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      firstScanSidecar: [Uint8Array],
+      firstScanLength: 11227,
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_media__aac4d081-01f3-472c-9a40-5da90e3befc7',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3ae47f19-b762-45bb-9f61-f439a18dae12',
+  keyword: 'ans_66849d85-5205-4ceb-8b4d-8616098ff777',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '9818327907f6195c65818baea5adc796'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3AEB49D79E7989EA877C',
+    participant: undefined
+  },
+  messageTimestamp: 1727571714,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'hectorsaavedra@gmail.com',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hectorsaavedra@gmail.com',
+  from: '5217713169532'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0ecd38e4-f424-4b57-9b62-73836ce4f9f8',
+  keyword: 'ans_3ae47f19-b762-45bb-9f61-f439a18dae12',
+  answer: '(.*)',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'f9f1f11d96bddbae311f214c2ce3acb0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217713169532@s.whatsapp.net',
+    fromMe: false,
+    id: '3AC5F0AB97E7FF29A756',
+    participant: undefined
+  },
+  messageTimestamp: 1727571720,
+  pushName: 'Hector Saavedra',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hector Saavedra',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hector Saavedra',
+  from: '5217713169532'
+}
