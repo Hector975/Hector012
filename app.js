@@ -30,12 +30,12 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
   .addAnswer(
     ['🎫 ¿Cuántos boletos deseas comprar? (Por favor, ingresa un número del 1 al 10)'],
     { capture: true },
-    async (ctx, { flowDynamic }) => {
+    async (ctx, { flowDynamic, fallBack }) => {
       const numTickets = parseInt(ctx.body.trim());
 
       if (isNaN(numTickets) || numTickets < 1 || numTickets > 10) {
         await flowDynamic('❌ Por favor, ingresa un número válido entre 1 y 10.');
-        return;
+        return fallBack(); // Repite la pregunta hasta que el usuario ingrese un número válido
       }
 
       // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
@@ -57,28 +57,26 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
       // Enviar los datos de pago de manera inmediata
       await flowDynamic([
         '🔄 Aquí tienes los datos para realizar el pago:',
-        '🏦 *Transferencia Bancaria*: Banco XYZ, CLABE 1234567890',
-        '💳 También puedes pagar con tarjeta en el siguiente enlace:',
-        '🔗 [Pagar con Tarjeta](https://tarjeta.com)',
-        '\n📸 Después de realizar el pago, por favor envía cualquier archivo o imagen para continuar.',
+        '🏦 *Transferencia Bancaria*: Banco: STP, Beneficiario: Hector Saavedra',
+        'CLABE: 646290146403497759',
+        '\n📸 Después de realizar el pago, por favor envía una *captura o archivo de tu comprobante* de pago para continuar.',
       ]);
     }
   )
   .addAnswer(
-    ['(.*)'], // Usamos una expresión regular para capturar cualquier mensaje
-    { capture: true, media: true, send: false }, // No enviamos el patrón como mensaje
+    ['(.*)'],
+    { capture: true, media: true, send: false },
     async (ctx, { flowDynamic }) => {
-      console.log('Archivo recibido:', ctx.body, ctx.media); // Verificación en consola
+      console.log('Archivo recibido:', ctx.body, ctx.media);
 
       // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
       ctx.flow = ctx.flow || {};
       ctx.flow.state = ctx.flow.state || {};
 
-      // Continuamos el flujo sin importar el tipo de mensaje o medio recibido
-      await flowDynamic('⏳ El pago se está validando y puede tardar hasta 24 horas.');
+      await flowDynamic('⏳ El pago está siendo validado por nuestros asesores y puede tardar hasta 24 horas, calma.');
 
       // Solicitamos el correo electrónico
-      await flowDynamic('📧 Por favor, proporciona tu *correo electrónico* para confirmar tu reservación.');
+      await flowDynamic('📧 Por favor, proporciona tu *correo electrónico* para enviar tus boletos digitales. Ten en cuenta que debes de tener acceso a este correo.');
     }
   )
   .addAnswer(
@@ -109,9 +107,9 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
 
       // Mostrar el mensaje final según lo solicitado
       await flowDynamic([
-        '🎉 Agradecemos mucho tu compra, tu pago se está validando con nuestros asesores, en 24 horas enviaremos los boletos digitales adquiridos al correo indicado.',
+        '🎉 Agradecemos mucho tu compra, tu pago se está validando con nuestros asesores. En un plazo máximo de 24 horas enviaremos los boletos digitales adquiridos al correo indicado.',
         'Si tienes dudas, comentarios o bien, deseas una atención personalizada comunícate al 771-316-9532.',
-        '\n👉 Escribe *hola* para regresar al inicio.'
+        '\n👉 Escribe *hola* para regresar al inicio.',
       ]);
     }
   );
