@@ -30,15 +30,14 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
   .addAnswer(
     ['🎫 ¿Cuántos boletos deseas comprar? (Por favor, ingresa un número del 1 al 10)'],
     { capture: true },
-    async (ctx, { flowDynamic, fallBack }) => {
+    async (ctx, { flowDynamic }) => {
       const numTickets = parseInt(ctx.body.trim());
 
       if (isNaN(numTickets) || numTickets < 1 || numTickets > 10) {
         await flowDynamic('❌ Por favor, ingresa un número válido entre 1 y 10.');
-        return fallBack(); // Repite la pregunta hasta que el usuario ingrese un número válido
+        return;
       }
 
-      // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
       ctx.flow = ctx.flow || {};
       ctx.flow.state = ctx.flow.state || {};
 
@@ -69,21 +68,19 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
     async (ctx, { flowDynamic }) => {
       console.log('Archivo recibido:', ctx.body, ctx.media);
 
-      // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
       ctx.flow = ctx.flow || {};
       ctx.flow.state = ctx.flow.state || {};
 
-      await flowDynamic('⏳ El pago está siendo validado por nuestros asesores y puede tardar hasta 24 horas, calma.');
+      await flowDynamic('⏳ El pago está siendo validado por nuestros asesores y puede tardar hasta 24 horas, por favor espera.');
 
       // Solicitamos el correo electrónico
-      await flowDynamic('📧 Por favor, proporciona tu *correo electrónico* para enviar tus boletos digitales. Ten en cuenta que debes de tener acceso a este correo.');
+      await flowDynamic('📧 Por favor, proporciona tu *correo electrónico* para enviar tus boletos digitales. Asegúrate de tener acceso a este correo.');
     }
   )
   .addAnswer(
     ['(.*)'],
     { capture: true, send: false },
     async (ctx, { flowDynamic }) => {
-      // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
       ctx.flow = ctx.flow || {};
       ctx.flow.state = ctx.flow.state || {};
 
@@ -98,29 +95,29 @@ const flowBoletos = addKeyword(['boletos', 'comprar boletos'])
     ['(.*)'],
     { capture: true, send: false },
     async (ctx, { flowDynamic }) => {
-      // Aseguramos que ctx.flow y ctx.flow.state estén inicializados
       ctx.flow = ctx.flow || {};
       ctx.flow.state = ctx.flow.state || {};
 
       const fullName = ctx.body.trim();
       ctx.flow.state.fullName = fullName;
 
-      // Mostrar el mensaje final según lo solicitado
+      // Mostrar el mensaje final
       await flowDynamic([
-        '🎉 Agradecemos mucho tu compra, tu pago se está validando con nuestros asesores. En un plazo máximo de 24 horas enviaremos los boletos digitales adquiridos al correo indicado.',
-        'Si tienes dudas, comentarios o bien, deseas una atención personalizada comunícate al 771-316-9532.',
-        '\n👉 Escribe *hola* para regresar al inicio.',
+        '🎉 Agradecemos mucho tu compra. Tu pago está siendo validado por nuestros asesores. En un plazo máximo de 24 horas enviaremos los boletos digitales adquiridos al correo indicado.',
+        'Si tienes dudas, comentarios o deseas una atención personalizada, comunícate al 771-316-9532.',
+        '\n👉 Escribe *hola* para regresar al inicio.'
       ]);
     }
   );
 
-// Flujo para obtener la información del evento
+// Flujo para obtener la información del evento y enviar el flyer
 const flowEvento = addKeyword(['evento', 'informacion del evento']).addAnswer(
   [
     eventDetails,
     '\n👉 *boletos* para comprar boletos.',
     '\n👉 *hola* para regresar al menú principal.',
-  ]
+  ],
+  { media: 'https://raw.githubusercontent.com/Hector975/Hector012/refs/heads/master/noveno%20nivel.jpg' } // Reemplaza con la URL directa de tu flyer
 );
 
 // Flujo principal que ofrece las opciones "comprar boletos" e "información del evento"
